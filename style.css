@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #50ffe2;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Meduim;
+    src: url(fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Raleway;
+    margin-top: 1.5rem;
+}
+
+
+/* NAV START */
+nav {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin: auto 20px;
+}
+
+nav header ul li {
+    list-style-type: none;
+    display: none;
+    margin-right: 1.2rem;
+    color: white;
+}
+
+nav header ul li:hover {
+    color: #a8a6a6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-family: Raleway-Meduim;
+    display: none;
+}
+.btn:hover{
+    color: var(--primary-color);
+    background-color: #000000;
+    border: 1px solid var(--primary-color);
+}
+
+i {
+    color: white;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* NAV END */
+
+
+
+/* CONTAINER START */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0rem 20px;
+    padding: 3rem 0rem;
+}
+
+.half-1 img {
+    width: 100%;
+    /* margin-top: 1rem; */
+    border-radius: 1rem;
+}
+
+.half-1,
+.half-2 {
+    text-align: center;
+}
+
+.half-2 .name {
+    color: var(--primary-color);
+    margin: 0.5rem 0rem;
+    font-size: 1.3rem;
+}
+
+.half-2 p .text {
+    color: white;
+}
+
+.half-2 h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 3.3rem;
+}
+
+.seagreen {
+    color: var(--primary-color);
+}
+
+.dummy-text {
+    color: white;
+    font-size: 0.8rem;
+    margin: 1rem 0rem;
+}
+
+.download {
+    color: var(--primary-color);
+    background-color: #000000;
+    border: 1px solid var(--primary-color);
+    padding: 0.7rem;
+    font-family: Raleway-Meduim;
+}
+
+.download:hover {
+    background-color: var(--primary-color);
+    color: #000000;
+}
+
+/* CONTAINER END */
+
+
+/* ABOUT ME START */
+
+.contain {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    text-align: center;
+}
+
+.part-1 img {
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.part-2 {
+    text-align: center;
+}
+
+.part-2 h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.part-2 .color {
+    color: var(--primary-color);
+}
+
+.part-2 .hello {
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+}
+
+.part-2 .sample-text {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.part-3 .icons {
+    width: 2rem;
+    margin-right: 0.7rem;
+    margin-top: 1rem;
+}
+
+/* ABOUT ME START */
+
+
+
+/* SERVICES START */
+.services {
+    background-color: #1c1b1b;
+    padding: 3rem 0rem;
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--primary-color);
+}
+
+.services p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.segment-1,
+.segment-2,
+.segment-3 {
+    border-radius: 5rem;
+    margin: 0rem 2rem 2rem 2rem;
+}
+
+.icon-rep {
+    background-color: white;
+    padding: 1rem;
+    color: #000000;
+    border-radius: 10rem;
+}
+
+.para {
+    background-color: white;
+    padding: 2rem 1rem;
+}
+
+.para .title,
+.para .text {
+    color: #000000;
+}
+
+.para .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.services .wrap-service{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+}
+/* SERVICES END */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:576px) {
+
+    /* hero section */
+    .container {
+        margin: auto 40px;
+    }
+
+    .half-2 .name {
+        font-size: 1.7rem;
+    }
+
+    .half-2 h1 {
+        font-size: 3.5rem;
+        margin: 1.5rem 0rem;
+    }
+
+    .dummy-text {
+        font-size: 0.9rem;
+        padding: 0rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* hero section */
+
+
+
+    /* about section */
+    .contain {
+        padding: 3rem;
+    }
+
+    .segment-1,
+    .segment-2,
+    .segment-3 {
+        margin: 1rem 5rem;
+    }
+
+    /* about section */
+
+
+
+    /* services section */
+
+
+    /* services section */
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        margin: auto 60px;
+    }
+
+    .half-1 img {
+        width: 85%;
+    }
+
+    .half-2 .name {
+        font-size: 2.1rem;
+    }
+
+    .half-2 h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 1.5rem 0rem;
+    }
+
+    .dummy-text {
+        font-size: 1.2rem;
+        padding: 0rem 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .download {
+        font-size: 1.2rem;
+        margin: 1rem 0rem;
+    }
+
+
+
+
+    /* about section */
+    .contain {
+        padding: 4rem 1rem;
+    }
+
+    .part-1 img {
+        width: 50%;
+    }
+
+    .part-2 .sample-text {
+        margin: 0rem 10rem;
+    }
+
+    /* about section */
+
+
+
+    /* services section */
+    .cover {
+        margin: auto 10px;
+    }
+
+    .cover h2 {
+        font-size: 1.7rem;
+    }
+
+    .cover p {
+        font-size: 1.2rem;
+    }
+
+    .segment-1,
+    .segment-2,
+    .segment-3 {
+        margin: 1rem 7rem;
+        padding: 1rem;
+    }
+
+    .para {
+        padding: 3rem;
+    }
+
+    .segment-1 .para .title,
+    .segment-2 .para .title,
+    .segment-3 .para .title {
+        font-size: 1.5rem;
+    }
+
+    .segment-1 .para .text,
+    .segment-2 .para .text,
+    .segment-3 .para .text {
+        font-size: 1.4rem;
+    }
+
+    /* services section */
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        margin: auto 35px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    nav header ul li {
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    div.cut-3 {
+        display: none;
+    }
+
+    ul .cut-2 {
+        flex: 1;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .half-1 img {
+        width: 85%;
+    }
+
+    .half-2 {
+        text-align: left;
+    }
+
+    .half-2 .name {
+        font-size: 2.1rem;
+    }
+
+    .half-2 h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 1.5rem 0rem;
+    }
+
+    .dummy-text {
+        font-size: 1.2rem;
+        padding: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .download {
+        font-size: 1.2rem;
+        margin: 1rem 0rem 2rem;
+    }
+
+
+
+    /* about */
+
+    .contain {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .part-1 img {
+        width: 50%;
+    }
+
+    .part-2 {
+        text-align: left;
+    }
+
+    .clip .part-2 h3 {
+        font-size: 2rem;
+    }
+
+    .clip .part-2 .hello {
+        font-size: 1.5rem;
+    }
+
+    .clip .part-2 .sample-text {
+        margin: 0rem;
+        font-size: 1.1rem;
+    }
+
+    .clip .part-3 {
+        text-align: left;
+    }
+
+    /* about */
+
+
+    /* services */
+    .cover{
+        margin: auto 30px   ;
+    }
+    .cover .wrap-service {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .segment-1,
+    .segment-2,
+    .segment-3 {
+        margin: 0rem;
+        padding: 1rem;
+    }
+    .para{
+        padding: 2rem 1rem;
+    }
+    /* services */
+}
+
+
+
+/* MEDIA QUERIES */
