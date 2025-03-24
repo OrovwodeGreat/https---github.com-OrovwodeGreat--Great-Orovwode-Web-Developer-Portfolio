@@ -1,5 +1,5 @@
-// var menu = document.getElementsByTagName("i");
+var menu = document.getElementById("menu-btn");
 
-// menu.addEventListener("click", function(){
-    
-// });
+menu.addEventListener("click", function(){
+        
+});
