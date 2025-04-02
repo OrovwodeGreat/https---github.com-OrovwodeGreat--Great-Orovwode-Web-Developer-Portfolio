@@ -74,7 +74,8 @@ header img {
     font-family: Raleway-Meduim;
     display: none;
 }
-.btn:hover{
+
+.btn:hover {
     color: var(--primary-color);
     background-color: #000000;
     border: 1px solid var(--primary-color);
@@ -237,6 +238,7 @@ i {
     padding: 2rem 1rem;
 }
 
+
 .para .title,
 .para .text {
     color: #000000;
@@ -248,14 +250,86 @@ i {
     margin-bottom: 1rem;
 }
 
-.services .wrap-service{
+.services .wrap-service {
     display: grid;
     /* grid-template-columns: 1fr; */
 }
+
 /* SERVICES END */
 
 
+/* PROJECTS */
+#projects{
+    background-color: black;
+    margin:2rem 0rem;
+    padding: 1.5rem;
+}    
+#projects h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#projects a{
+    margin-bottom: 1rem;
+}
+.card-link {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    display: block;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-link .card-description {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-color: var(--primary-color);
+
+}
+
+.card-link:hover .card-description {
+    opacity: 1;
+}
+
+.card-description h3{
+    font-size: 0.8rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+.card-description p{
+    color: black;
+    font-size: 0.5rem;
+    padding: 0rem 0.8rem;
+    margin-bottom: 0rem;
+}
+
+/* PROJECTS */
+
+
+
 /* MEDIA QUERIES */
+@media screen and (min-width:400px) {
+    #projects{
+        padding:2rem;
+    }
+    #projects a{
+        margin-bottom: 2rem;
+    }
+}
 
 @media screen and (min-width:576px) {
 
@@ -391,6 +465,18 @@ i {
     }
 
     /* services section */
+
+
+
+    /* projects section */
+    #projects{
+        padding:3rem;
+    }
+
+    #projects a{
+        margin-bottom: 3rem;
+    }
+    /* projects section */
 }
 
 @media screen and (min-width:992px) {
@@ -487,25 +573,59 @@ i {
 
 
     /* services */
-    .cover{
-        margin: auto 30px   ;
+    .cover {
+        margin: auto 30px;
     }
+
     .cover .wrap-service {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .segment-1,
     .segment-2,
     .segment-3 {
         margin: 0rem;
         padding: 1rem;
     }
-    .para{
+
+    .para {
         padding: 2rem 1rem;
     }
+
     /* services */
+
+     /* projects section */
+     #projects{
+        padding:3rem;
+        height: 100vh;
+    }
+
+    #projects h3{
+        font-size: 1.3rem;
+    }
+
+    #projects p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects-link-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    #projects a{
+        margin-bottom: 3rem;
+    }
+    /* projects section */
 }
 
+@media screen and (min-width:1280px) {
+    .projects-link-wrap{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 /* MEDIA QUERIES */
