@@ -26,66 +26,44 @@
 }
 
 body {
-    background-color: #000000;
-    font-family: Raleway;
+    background-color: #000000 !important;
+    font-family: Raleway !important;
     margin-top: 1.5rem;
 }
 
 
 /* NAV START */
-nav {
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-    margin: auto 20px;
+#nav .navbar .navbar-expand-lg .bg-body-tertiary .fixed-top {
+    background-color: #000000 !important;
+    /* position:fixed; */
+    /* margin-bottom: 1rem; */
 }
 
-nav header ul li {
-    list-style-type: none;
-    display: none;
-    margin-right: 1.2rem;
+.navbar>.container {
+    padding: 0rem;
+    margin: 0rem 20px;
+}
+
+.nav-link {
     color: white;
 }
 
-nav header ul li:hover {
-    color: #a8a6a6;
-    cursor: pointer;
-    text-decoration: none;
+.nav-item a .nav-link:hover {
+    color: white;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-header img {
-    width: 100px;
-}
-
-.btn {
+.navbar-nav .btn {
     background-color: var(--primary-color);
     color: black;
     border: none;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     font-family: Raleway-Meduim;
-    display: none;
 }
 
-.btn:hover {
+.navbar-nav .btn:hover {
     color: var(--primary-color);
     background-color: #000000;
     border: 1px solid var(--primary-color);
-}
-
-i {
-    color: white;
-    text-align: right;
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
 }
 
 /* NAV END */
@@ -96,13 +74,13 @@ i {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0rem 20px;
-    padding: 3rem 0rem;
+    margin: 2rem 20px 0rem 20px;
+    padding: 5rem 0rem;
 }
 
 .half-1 img {
     width: 100%;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     border-radius: 1rem;
 }
 
@@ -145,6 +123,9 @@ i {
     border: 1px solid var(--primary-color);
     padding: 0.7rem;
     font-family: Raleway-Meduim;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
 .download:hover {
@@ -193,12 +174,6 @@ i {
     margin-bottom: 1rem;
 }
 
-.part-3 .icons {
-    width: 2rem;
-    margin-right: 0.7rem;
-    margin-top: 1rem;
-}
-
 /* ABOUT ME START */
 
 
@@ -206,7 +181,7 @@ i {
 /* SERVICES START */
 .services {
     background-color: #1c1b1b;
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
     text-align: center;
 }
 
@@ -259,19 +234,21 @@ i {
 
 
 /* PROJECTS */
-#projects{
+#projects {
     background-color: black;
-    margin:2rem 0rem;
+    margin: 2rem 0rem;
     padding: 1.5rem;
-}    
+}
+
 #projects h2 {
     color: var(--primary-color);
     text-align: center;
 }
 
-#projects a{
+#projects a {
     margin-bottom: 1rem;
 }
+
 .card-link {
     position: relative;
     overflow: hidden;
@@ -305,12 +282,13 @@ i {
     opacity: 1;
 }
 
-.card-description h3{
+.card-description h3 {
     font-size: 0.8rem;
     color: #000000;
     margin-bottom: 0.5rem;
 }
-.card-description p{
+
+.card-description p {
     color: black;
     font-size: 0.5rem;
     padding: 0rem 0.8rem;
@@ -320,13 +298,99 @@ i {
 /* PROJECTS */
 
 
+/* CONTACT */
+.contact {
+    margin: 2rem 20px;
+    background-color: #2b3036;
+}
+
+.contact h2 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.contact p {
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.8rem;
+}
+
+input,
+textarea,
+button {
+    padding: 5px;
+    border: none;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+input,
+textarea {
+    background-color: #EDEDED;
+}
+
+.contact label{
+    color: white;
+}
+button {
+    color: #000000;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-family: Raleway-Meduim;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 1rem !important;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+    border: 1px solid var(--primary-color);
+    color: white;
+}
+
+
+/* CONTACT */
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.part-3 .icons {
+    width: 2rem;
+    margin-right: 0.7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.part-3 .icons:hover {
+    border: 4px solid grey;
+    border-radius: 5rem;
+}
+
+/* FOOTER */
 
 /* MEDIA QUERIES */
 @media screen and (min-width:400px) {
-    #projects{
-        padding:2rem;
+    #projects {
+        padding: 2rem;
     }
-    #projects a{
+
+    #projects a {
         margin-bottom: 2rem;
     }
 }
@@ -376,6 +440,25 @@ i {
 
 
     /* services section */
+
+
+
+    /* project section */
+
+    .card-description h3 {
+        font-size: 2rem;
+        color: #000000;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-description p {
+        color: black;
+        font-size: 1.5rem;
+        padding: 0rem 0.8rem;
+        margin-bottom: 0rem;
+    }
+
+    /* project section */
 }
 
 @media screen and (min-width:768px) {
@@ -469,13 +552,17 @@ i {
 
 
     /* projects section */
-    #projects{
-        padding:3rem;
+    #projects {
+        padding: 3rem;
     }
 
-    #projects a{
+    #projects a {
         margin-bottom: 3rem;
     }
+    
+    
+
+
     /* projects section */
 }
 
@@ -527,12 +614,12 @@ i {
     .dummy-text {
         font-size: 1.2rem;
         padding: 0rem;
-        margin-bottom: 0rem;
+        margin-bottom: 2rem;
     }
 
     .download {
         font-size: 1.2rem;
-        margin: 1rem 0rem 2rem;
+        margin: 2rem 0rem;
     }
 
 
@@ -595,34 +682,36 @@ i {
 
     /* services */
 
-     /* projects section */
-     #projects{
-        padding:3rem;
+    /* projects section */
+    #projects {
+        padding: 3rem;
         height: 100vh;
     }
 
-    #projects h3{
+    #projects h3 {
         font-size: 1.3rem;
     }
 
-    #projects p{
+    #projects p {
         font-size: 1rem;
         margin-bottom: 2rem;
     }
 
-    .projects-link-wrap{
+    .projects-link-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
-    #projects a{
+
+    #projects a {
         margin-bottom: 3rem;
     }
+
     /* projects section */
 }
 
 @media screen and (min-width:1280px) {
-    .projects-link-wrap{
+    .projects-link-wrap {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }

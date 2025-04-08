@@ -9,6 +9,10 @@
     <meta name="description"
         content="Explore the portfolio of Great Orovwode, a passionate web developer with experience in HTML, CSS, JavaScript, and UX/UI design.">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="shortcut icon" href="Images/logo-extra.png" type="image/png">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -18,38 +22,42 @@
 </head>
 
 <body>
-
-    <nav>
-        <header>
-            <div class="cut-1">
-                <img src="Images/logo.png" alt="">
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top " data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" class="img-fluid"
+                style="max-height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <ul class="cut-2">
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="#hero">
-                    <li>About</li><a href="#about">
-                    </a>
-                    <a href="#services">
-                        <li>Services</li><a href="">
-                        </a>
-                        <a href="#projects">
-                            <li>Projects</li><a href="">
-                            </a>
-                            <a href="">
-                                <li>Blog</li><a href="">
-                                </a>
-            </ul>
-
-            <button class="btn" href="#home"> Contact</button>
-
-            <div class="cut-3">
-                <i id="#menu-btn" class="fa-solid fa-bars"></i>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <a class="btn" href="#contact"> Contact</a>
             </div>
-        </header>
-
+            
+        </div>
+        </div>
+        
     </nav>
 
     <section id="hero" class=" hero container">
@@ -61,7 +69,7 @@
             <h1>I'm a Web <span class="seagreen">Developer</span></h1>
             <p class="dummy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quos, aliquid atque
                 similique veritatis culpa.</p>
-            <button class="download">DOWNLOAD CVS</button>
+            <a class="download" href="CV/Orovwode Great CV.pdf"  download="CV.pdf">DOWNLOAD CV</a>
         </div>
     </section>
 
@@ -79,12 +87,6 @@
                         quas ex tenetur doloremque omnis nesciunt. Distinctio natus quibusdam dolorum fugiat totam
                         perspiciatis
                         eos quasi nemo earum mollitia!</p>
-                </div>
-                <div class="part-3">
-                    <img class="icons" src="Font-awesome/svgs/brands/facebook.svg" alt="facebook logo">
-                    <img class="icons" src="Font-awesome/svgs/brands/instagram.svg" alt="instagram logo">
-                    <img class="icons" src="Font-awesome/svgs/brands/youtube.svg" alt="youtube logo">
-                    <img class="icons" src="Font-awesome/svgs/solid/globe.svg" alt="internet icon">
                 </div>
             </div>
         </div>
@@ -136,9 +138,7 @@
                     </div>
                     <div class="card-description">
                         <h3>Portfolio Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>Personal portfolio showcasing my work, skills, and background in web development.</p>
                     </div>
                 </a>
                 <a href="https://orovwodegreat.github.io/Denab-Brokers-Site/" target="_blank" class="card-link">
@@ -147,9 +147,7 @@
                     </div>
                     <div class="card-description">
                         <h3>Denab Brokers Site</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>A clean landing page design for a modern investment or trading company.</p>
                     </div>
                 </a>
                 <a href="https://orovwodegreat.github.io/Subscribe-Newsletter/" target="_blank" class="card-link">
@@ -158,9 +156,7 @@
                     </div>
                     <div class="card-description">
                         <h3>DYEN Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>Web platform for connecting young talents with mentorship and growth opportunities.</p>
                     </div>
                 </a>
 
@@ -170,9 +166,7 @@
                     </div>
                     <div class="card-description">
                         <h3>Color Game</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>Fun interactive game where users match the RGB code to the correct color block.</p>
                     </div>
                 </a>
 
@@ -182,9 +176,7 @@
                     </div>
                     <div class="card-description">
                         <h3>Todo List App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>Simple yet functional To-Do List app to organize daily tasks efficiently.</p>
                     </div>
                 </a>
 
@@ -194,9 +186,7 @@
                     </div>
                     <div class="card-description">
                         <h3>The-King-Convoys</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit, ipsum cumque, soluta
-                            voluptatum sequi reprehenderit atque nulla vero expedita doloribus placeat ab unde eaque
-                            possimus repellat. Aliquid, debitis accusantium.</p>
+                        <p>Informative site page detailing mission, impact, and programs of a nonprofit or startup.</p>
                     </div>
                 </a>
             </div>
@@ -204,9 +194,49 @@
         </section>
     </section>
 
+    <div id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Say Hello 👋</p>
+        <form action="#" method="post">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+          
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="email@example.com" required>
+          
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+          
+            <!-- Submit Button -->
+            <button class="submit" type="submit">Send</button>
+          </form>
+          
+    </div>
+
+    <footer>
+        <div class="part-3">
+            <a href="https://facebook.com/?_rdc=2&_rdr/" target="_blank">
+            <img class="icons" src="Font-awesome/svgs/brands/facebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.instagram.com/orovwodegreat/" target="_blank">
+            <img class="icons" src="Font-awesome/svgs/brands/instagram.svg" alt="instagram logo">
+            </a>
+
+            <a href="https://www.youtube.com/@OrovwodeGreat" target="_blank">
+            <img class="icons" src="Font-awesome/svgs/brands/youtube.svg" alt="youtube logo">
+            </a>
+
+            <a href="https://orovwodegreat.github.io/Portfolio-Website/" target="_blank">
+            <img class="icons" src="Font-awesome/svgs/solid/globe.svg" alt="internet icon">
+            </a>
+        </div>
+    </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger intent="WELCOME" chat-title="Portfolio-Chatbot" agent-id="6455ba06-f4f1-4fdd-9d13-1b59fa668ab1"
         language-code="en"></df-messenger>
